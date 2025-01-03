@@ -93,24 +93,29 @@
             </div>
         </div>
     </section>
-    <form action="https://formsubmit.co/1df0f1e9d7c549724f3d2d609c906b1f" method="POST">
-      <label for="nume">Nume:</label>
-        <input type="text" id="nume" name="nume" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="telefon">Telefon:</label>
-        <input type="tel" id="telefon" name="telefon" required><br><br>
-
-        <label for="subiect">Subiect:</label>
-        <input type="text" id="subiect" name="subiect" required><br><br>
-
-        <label for="mesaj">Mesaj:</label><br>
-        <textarea id="mesaj" name="mesaj" rows="4" cols="50" required></textarea><br><br>
-
-        <button type="submit">Trimite</button>
- </form>
+    <section id="contact-form">
+      <h3 class="contact-title">CONTACT</h3>
+      <form action="https://formsubmit.co/1df0f1e9d7c549724f3d2d609c906b1f" method="POST">
+          <div class="form-group">
+              <label for="nume">Nume:</label>
+              <input type="text" id="nume" name="nume" placeholder="Introduceți numele" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Introduceți email-ul" required>
+          </div>
+          <div class="form-group">
+              <label for="telefon">Telefon:</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="Introduceți telefonul" required>
+          </div>
+          <div class="form-group">
+              <label for="mesaj">Mesaj:</label>
+              <textarea id="mesaj" name="mesaj" rows="3" placeholder="Scrieți mesajul aici" required></textarea>
+          </div>
+          <button type="submit">Trimite</button>
+      </form>
+  </section>
+  
      </main>
      <footer>
       <div class="footer-container">
@@ -131,8 +136,8 @@
         <div class="footer-right">
           <ul class="social-media">
             <li><a href="https://www.facebook.com/fixit" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/fixit" target="_blank"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/fixit" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/37369598170" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
           </ul>
         </div>
       </div>
