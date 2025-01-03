@@ -42,12 +42,14 @@ header {
 nav .links {
     display: flex;
     gap: 62px;
+    
 }
 
 a {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    
 }
 
 a:hover {
@@ -58,9 +60,12 @@ header {
     position: relative;
 }
 
-.logo img {
-    width: 79px;
-    height: 38px;
+.logo {
+    font-weight: bold;
+    font-family: "Poller One", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .nav .toggle_btn {
@@ -152,19 +157,19 @@ section#hero {
 }
 
 .img-1 {
-    background-image: url("https://images.pexels.com/photos/5463576/pexels-photo-5463576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("images/aerConditionat.jpg");
 }
 
 .img-2 {
-    background-image: url("https://images.pexels.com/photos/5691536/pexels-photo-5691536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("images/instalatiiSanitare.jpg");
 }
 
 .img-3 {
-    background-image: url("https://images.pexels.com/photos/3616745/pexels-photo-3616745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("images/instalatiielectrice.jpg");
 }
 
 .img-4 {
-    background-image: url("https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("images/zugravire.jpg");
 }
 
 .card h2 {
@@ -476,3 +481,11 @@ footer {
         /* Adjust paragraph font size for very small screens */
     }
 }
+
+
+
+
+
+
+
+
