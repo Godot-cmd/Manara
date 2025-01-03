@@ -7,10 +7,10 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif; /* Added fallback font */
-    
+    font-family: "Montserrat", sans-serif;
 }
 
+/* BACKGROUND */
 .background {
     height: 840px;
     background-image: url("https://images.unsplash.com/photo-1523413555809-0fb1d4da238d?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -18,6 +18,7 @@ body {
     background-position: center;
 }
 
+/* HEADER */
 header {
     background: #F46B3F;
 }
@@ -32,7 +33,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    
 }
 
 .links {
@@ -77,7 +77,7 @@ header {
     width: 300px;
     background: rgba(245, 243, 243, 0.397);
     overflow: hidden;
-    transition: height 0.5s ease; /* Simplified transition */
+    transition: height 0.5s ease;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     position: absolute;
@@ -85,7 +85,7 @@ header {
 
 .dropdown_menu.open {
     height: 240px;
-    display: block; /* Display managed by height transition */
+    display: block;
 }
 
 .dropdown_menu li {
@@ -95,8 +95,7 @@ header {
     justify-content: center;
 }
 
-/* HERO */
-
+/* HERO SECTION */
 section#hero {
     height: calc(100vh - 60px);
     display: flex;
@@ -106,19 +105,16 @@ section#hero {
     text-align: center;
     color: black;
     gap: 78px;
-    
 }
 
 #hero h1 {
     font-size: 40px;
     padding: 0.2rem;
-    
 }
 
 #hero p {
     font-size: 30px;
     opacity: 80%;
-    
 }
 
 #action_btn {
@@ -129,11 +125,9 @@ section#hero {
     border-radius: 4px;
     padding: 20px 60px;
     cursor: pointer;
-    
 }
 
-/* SERVICES */
-
+/* SERVICES SECTION */
 .cards_container {
     display: flex;
     justify-content: center;
@@ -193,17 +187,13 @@ section#hero {
     font-size: 17px;
 }
 
-/* PROCESUL DE LUCRU */
+/* PROCESS STEPS SECTION */
 section .precess-title {
     text-align: center;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
-    line-height: 39px;
     margin-top: 100px;
-
-    color: #000000;
-
+    color: #000;
 }
 
 .steps-container {
@@ -211,7 +201,6 @@ section .precess-title {
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    position: relative;
 }
 
 .step {
@@ -221,69 +210,179 @@ section .precess-title {
     height: 193px;
     border-radius: 10px;
     box-shadow: 1px 7px 14.8px -6px rgba(0, 0, 0, 0.25);
-    padding-left: 38px;
-    padding-right: 38px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    
+    padding: 24px 38px;
 }
-
 
 .step-number {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
     text-align: center;
     background-color: white;
-    width: 40px; /* Adjust width for desired size */
-    height: 40px; /* Adjust height for desired size */
-    border-radius: 50%; /* Makes it round */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     display: flex;
-    align-items: center; /* Vertically centers the number */
-    justify-content: center; /* Horizontally centers the number */
-    margin: 0 auto 10px; /* Adds vertical gap below the number (10px) */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
 }
 
-
-
 .step h3 {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
     text-align: center;
-    color: #000000;
-    margin-bottom: 10px; /* Adds vertical gap below the title */
+    color: #000;
+    margin-bottom: 10px;
 }
 
 .step p {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
     text-align: center;
-    color: #000000;
+    color: #000;
     opacity: 0.76;
-    margin-top: 10px; /* Adds vertical gap above the paragraph */
+    margin-top: 10px;
 }
 
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-middle li,
+.footer-right li {
+    margin-bottom: 10px;
+}
+
+.footer-middle a,
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-middle a:hover,
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.social-media i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: white;
+}
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
-    .nav .links,
-    .nav .phone {
+    .nav .links, .nav .phone {
         display: none;
     }
 
     .nav .toggle_btn {
         display: block;
     }
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-middle ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-right ul {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .dropdown_menu {
         left: 2rem;
         width: unset;
+    }
+}
+
+/* Adjustments for step components on smaller screens */
+@media (max-width: 992px) {
+    .steps-container {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 90%;  /* Adjust width for smaller screens */
+        max-width: 350px; /* Ensure it doesn't grow too wide */
+    }
+
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 16px; /* Adjust number font size for smaller screens */
+    }
+
+    .step h3 {
+        font-size: 18px; /* Adjust title font size */
+    }
+
+    .step p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .steps-container {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 95%; /* Further reduce width on extra small screens */
+    }
+
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 14px; /* Adjust number font size further */
+    }
+
+    .step h3 {
+        font-size: 16px; /* Adjust title font size for very small screens */
+    }
+
+    .step p {
+        font-size: 12px; /* Adjust paragraph font size for very small screens */
     }
 }
