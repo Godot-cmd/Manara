@@ -260,7 +260,9 @@ footer {
     padding: 0 20px;
 }
 
-.footer-left, .footer-middle, .footer-right {
+.footer-left,
+.footer-middle,
+.footer-right {
     flex: 1;
 }
 
@@ -303,7 +305,9 @@ footer {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
-    .nav .links, .nav .phone {
+
+    .nav .links,
+    .nav .phone {
         display: none;
     }
 
@@ -342,22 +346,27 @@ footer {
     }
 
     .step {
-        width: 90%;  /* Adjust width for smaller screens */
-        max-width: 350px; /* Ensure it doesn't grow too wide */
+        width: 90%;
+        /* Adjust width for smaller screens */
+        max-width: 350px;
+        /* Ensure it doesn't grow too wide */
     }
 
     .step-number {
         width: 35px;
         height: 35px;
-        font-size: 16px; /* Adjust number font size for smaller screens */
+        font-size: 16px;
+        /* Adjust number font size for smaller screens */
     }
 
     .step h3 {
-        font-size: 18px; /* Adjust title font size */
+        font-size: 18px;
+        /* Adjust title font size */
     }
 
     .step p {
-        font-size: 14px; /* Adjust paragraph font size */
+        font-size: 14px;
+        /* Adjust paragraph font size */
     }
 }
 
@@ -369,20 +378,24 @@ footer {
     }
 
     .step {
-        width: 95%; /* Further reduce width on extra small screens */
+        width: 95%;
+        /* Further reduce width on extra small screens */
     }
 
     .step-number {
         width: 30px;
         height: 30px;
-        font-size: 14px; /* Adjust number font size further */
+        font-size: 14px;
+        /* Adjust number font size further */
     }
 
     .step h3 {
-        font-size: 16px; /* Adjust title font size for very small screens */
+        font-size: 16px;
+        /* Adjust title font size for very small screens */
     }
 
     .step p {
-        font-size: 12px; /* Adjust paragraph font size for very small screens */
+        font-size: 12px;
+        /* Adjust paragraph font size for very small screens */
     }
 }
