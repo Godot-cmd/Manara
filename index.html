@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>FixIt - Servicii de Instalații</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header class="header">
+    
+      <nav class="nav">
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="FixIt Logo">
+        </a>
+        <ul class="links">
+          <li><a href="#despre">Despre noi</a></li>
+          <li><a href="#servicii">Servicii</a></li>
+          <li><a href="#portofoliu">Portofoliu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+          <li><a href="tel:0795981702" class="phone">0795981702</a></li>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+      </nav>
+      <div class="dropdown_menu">
+        <li><a href="#despre">Despre noi</a></li>
+        <li><a href="#servicii">Servicii</a></li>
+        <li><a href="#portofoliu">Portofoliu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:0795981702" class="phone">0795981702</a></li>
+      </div>
+  </header>
+  <div class="background">
+    <main>
+      <section id="hero">
+        <h1>Servicii de Instalații de Încredere în București</h1>
+        <p>De la reparații rapide la soluții <br> 
+          complete, suntem aici pentru tine!</p>
+          <button id="action_btn">SOLICITA OFERTA</button>
+      </section>
+      <section class="cards_container">
+        <div class="card">
+          <div class="card-image img-1"></div>
+            <h2>AER CONDITIONAT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Risus nullam gravida ornare et lorem suspendisse magna morbi. </p>
+            <a href="">CITESTE MAI MULT...</a>
+        </div>
+        <div class="card">
+          <div class="card-image img-2"></div>
+            <h2>INSTALATII SANITARE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Risus nullam gravida ornare et lorem suspendisse magna morbi. </p>
+            <a href="">CITESTE MAI MULT...</a>
+        </div>
+        <div class="card">
+          <div class="card-image img-3"></div>
+            <h2>SERVICII ELECTRICE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Risus nullam gravida ornare et lorem suspendisse magna morbi. </p>
+            <a href="">CITESTE MAI MULT...</a>
+        </div>
+        <div class="card">
+          <div class="card-image img-4"></div>
+            <h2>ZUGRAVIT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Risus nullam gravida ornare et lorem suspendisse magna morbi. </p>
+            <a href="">CITESTE MAI MULT...</a>
+        </div>
+      </section>
+      <section class="steps">
+        <h3 class="precess-title">PROCESUL DE LUCRU</h3>
+        <div class="steps-container">
+            <div class="step">
+              <div class="content">
+                <div class="step-number">1</div>
+                <h3>CONTACTARE</h3>
+                <p>Completează formularul sau sună-ne pentru a solicita o ofertă.</p>
+              </div>
+            </div>
+            <div class="progress-bar"></div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>EVALUARE</h3>
+                <p>Echipa noastră va analiza cerințele și va oferi o estimare detaliată.</p>
+            </div>
+            <div class="progress-bar"></div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>INSTALARE/REPARARE</h3>
+                <p>Executăm instalarea sau reparația la standarde profesionale.</p>
+            </div>
+        </div>
+    </section>
+    <form action="https://formsubmit.co/1df0f1e9d7c549724f3d2d609c906b1f" method="POST">
+      <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" required><br><br>
+
+        <label for="subiect">Subiect:</label>
+        <input type="text" id="subiect" name="subiect" required><br><br>
+
+        <label for="mesaj">Mesaj:</label><br>
+        <textarea id="mesaj" name="mesaj" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Trimite</button>
+ </form>
+     </main>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

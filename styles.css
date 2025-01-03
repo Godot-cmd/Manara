@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif; /* Added fallback font */
+    
+}
+
+.background {
+    height: 840px;
+    background-image: url("https://images.unsplash.com/photo-1523413555809-0fb1d4da238d?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background: #F46B3F;
+}
+
+.nav {
+    height: 60px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    
+}
+
+.links {
+    list-style: none;
+}
+
+nav .links {
+    display: flex;
+    gap: 62px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+a:hover {
+    color: white;
+}
+
+header {
+    position: relative;
+}
+
+.logo img {
+    width: 79px;
+    height: 38px;
+}
+
+.nav .toggle_btn {
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+    right: 2rem;
+    top: 63.9px;
+    height: 0;
+    width: 300px;
+    background: rgba(245, 243, 243, 0.397);
+    overflow: hidden;
+    transition: height 0.5s ease; /* Simplified transition */
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.dropdown_menu.open {
+    height: 240px;
+    display: block; /* Display managed by height transition */
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HERO */
+
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    gap: 78px;
+    
+}
+
+#hero h1 {
+    font-size: 40px;
+    padding: 0.2rem;
+    
+}
+
+#hero p {
+    font-size: 30px;
+    opacity: 80%;
+    
+}
+
+#action_btn {
+    background-color: #F46B3F;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 20px 60px;
+    cursor: pointer;
+    
+}
+
+/* SERVICES */
+
+.cards_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    position: relative;
+}
+
+.card {
+    background: #DDD7B6;
+    width: 270px;
+    height: 366px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 13.9px 1px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+    height: 165px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.img-1 {
+    background-image: url("https://images.pexels.com/photos/5463576/pexels-photo-5463576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.img-2 {
+    background-image: url("https://images.pexels.com/photos/5691536/pexels-photo-5691536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.img-3 {
+    background-image: url("https://images.pexels.com/photos/3616745/pexels-photo-3616745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.img-4 {
+    background-image: url("https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.card h2 {
+    padding-top: 18px;
+    padding-left: 26px;
+    padding-right: 27px;
+    padding-bottom: 12px;
+    font-size: 19px;
+}
+
+.card p {
+    padding-left: 26px;
+    padding-right: 27px;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
+.card a {
+    padding-left: 26px;
+    font-size: 17px;
+}
+
+/* PROCESUL DE LUCRU */
+section .precess-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 100px;
+
+    color: #000000;
+
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+}
+
+.step {
+    margin-top: 36px;
+    background: linear-gradient(109.76deg, rgba(218, 219, 202, 0.66) 0%, #DADBCA 100%);
+    width: 322px;
+    height: 193px;
+    border-radius: 10px;
+    box-shadow: 1px 7px 14.8px -6px rgba(0, 0, 0, 0.25);
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
+
+
+.step-number {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    background-color: white;
+    width: 40px; /* Adjust width for desired size */
+    height: 40px; /* Adjust height for desired size */
+    border-radius: 50%; /* Makes it round */
+    display: flex;
+    align-items: center; /* Vertically centers the number */
+    justify-content: center; /* Horizontally centers the number */
+    margin: 0 auto 10px; /* Adds vertical gap below the number (10px) */
+}
+
+
+
+.step h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px; /* Adds vertical gap below the title */
+}
+
+.step p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.76;
+    margin-top: 10px; /* Adds vertical gap above the paragraph */
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .nav .links,
+    .nav .phone {
+        display: none;
+    }
+
+    .nav .toggle_btn {
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
