@@ -1,230 +1,323 @@
 /* RESPONSIVE FORM */
 @media (max-width: 768px) {
-    form {
-        padding: 15px;
-    }
+  form {
+    padding: 15px;
+  }
 
-    .form-group {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 10px;
-    }
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
 
-    form label {
-        text-align: left;
-        width: 100%;
-    }
+  form label {
+    text-align: left;
+    width: 100%;
+  }
 }
 
 /* RESPONSIVE FOOTER DESIGN */
 @media (max-width: 992px) {
 
-    .nav .links,
-    .nav .phone {
-        display: none;
-    }
+  .nav .links,
+  .nav .phone {
+    display: none;
+  }
 
-    .nav .toggle_btn {
-        display: block;
-    }
+  .nav .toggle_btn {
+    display: block;
+  }
 
-    footer .footer-container {
-        flex-direction: column;
-    }
+  footer .footer-container {
+    flex-direction: column;
+  }
 
-    .footer-middle ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer-middle ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-right ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-    }
+  .footer-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
 }
 
 
 /* RESPONSIVE DROPDOWN MENU */
 @media (max-width: 576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
 }
 
 
 /* Adjustments for step components on smaller screens */
-@media (max-width: 992px) {
-    .steps-container {
-        gap: 30px;
-        flex-direction: column;
-        align-items: center;
-    }
+/* @media (max-width: 992px) {
+  .steps-container {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .step {
-        width: 90%;
-        /* Adjust width for smaller screens */
-        max-width: 350px;
-        /* Ensure it doesn't grow too wide */
-    }
+  .step {
+    width: 90%;
+    max-width: 350px;
+  
+  }
 
-    .step-number {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-        /* Adjust number font size for smaller screens */
-    }
+  .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    
+  }
 
-    .step h3 {
-        font-size: 18px;
-        /* Adjust title font size */
-    }
+  .step h3 {
+    font-size: 18px;
+    
+  }
 
-    .step p {
-        font-size: 14px;
-        /* Adjust paragraph font size */
-    }
+  .step p {
+    font-size: 14px;
+    
+  }
 }
 
 @media (max-width: 576px) {
-    .steps-container {
-        gap: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
+  .steps-container {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .step {
-        width: 95%;
-        /* Further reduce width on extra small screens */
-    }
+  .step {
+    width: 95%;
+    
+  }
 
-    .step-number {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-        /* Adjust number font size further */
-    }
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    
+  }
 
-    .step h3 {
-        font-size: 16px;
-        /* Adjust title font size for very small screens */
-    }
+  .step h3 {
+    font-size: 16px;
+    
+  }
 
-    .step p {
-        font-size: 12px;
-        /* Adjust paragraph font size for very small screens */
-    }
+  .step p {
+    font-size: 12px;
+    
+  }
 }
 
 @media (max-width: 667px) {
-    section#hero {
-        gap: 40px;
-    }
-    
+  section#hero {
+    gap: 40px;
+  }
+
+} */
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 900px) {
+  .precess-title {
+      font-size: 24px; /* Adjust font size for smaller screens */
+      margin-top: 20px; /* Adjust margin */
+  }
+
+  .steps-container {
+      justify-content: flex-start; /* Align to the start */
+      flex-wrap: nowrap; /* Prevent wrap */
+      overflow-x: auto; /* Allow horizontal scroll */
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      width: auto; /* Auto width to adjust based on content */
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .step {
+      width: 270px; /* Fixed width for smaller screens */
+      height: 160px; /* Fixed height for smaller screens */
+      flex: 0 0 auto; /* Prevent resizing */
+      margin-top: 20px; /* Adjust margin */
+  }
+
+  .step-number {
+      font-size: 18px; /* Adjust step number size */
+      width: 35px; /* Adjust size */
+      height: 35px; /* Adjust size */
+  }
+
+  .step h3 {
+      font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .step p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .steps-container::-webkit-scrollbar {
+      display: none; /* Hide scrollbar */
+  }
+
+  .steps-container {
+      -ms-overflow-style: none; /* For Internet Explorer and Edge */
+      scrollbar-width: none; /* For Firefox */
+  }
 }
 
 
 /* ABOUT SECTION */
 
 @media (max-width: 1024px) {
-    .about-section {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 50px;
-    }
-  
-    .about {
-      width: 100%;
-      height: auto;
-      background-size: 100%; /* Adjust background size to fit smaller screens */
-      padding: 50px 20px; /* Reduce padding for smaller screens */
-      background-position: top center;
-    }
-  
-    .experience-section {
-      width: auto;
-      position: static; /* Adjust position to avoid overlap */
-      margin-bottom: 20px; /* Add spacing between sections */
-    }
-  
-    .experience-section h1 {
-      padding: 10px 20px; /* Adjust padding for better fit */
-      font-size: 14px; /* Reduce font size */
-      text-align: center;
-    }
-  
-    .experience-section .orange-text {
-      font-size: 20px; /* Adjust font size for mobile view */
-    }
-  
-    .inner-section {
-      width: 100%;
-      padding: 20px; /* Adjust padding for smaller screens */
-      box-shadow: none; /* Remove shadow for simplicity */
-    }
-  
-    .inner-section h5 {
-      font-size: 12px; /* Smaller font size for headings */
-      text-align: left; /* Align text to the left */
-    }
-  
-    .inner-section .about-title {
-      font-size: 24px; /* Adjust font size for smaller screens */
-      margin-left: 0;
-      margin-right: 0;
-      text-align: left;
-    }
-  
-    .inner-section .about-info,
-    .inner-section ul,
-    .inner-section ul li {
-      font-size: 14px; /* Adjust text size for readability */
-      margin-left: 0;
-      margin-right: 0;
-    }
-  
-    .inner-section ul li {
-      margin-bottom: 10px;
-    }
-  
-    .inner-section .contact {
-      float: none; /* Reset float for mobile view */
-      margin-top: 15px;
-      text-align: left;
-      float: right;
-    }
+  .about-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
   }
-  
-  @media (max-width: 768px) {
-    .about-section {
-      margin-top: 30px;
-    }
-  
-    .about {
-      padding: 30px 15px; /* Further reduce padding for smaller screens */
-    }
-  
-    .experience-section h1 {
-      font-size: 12px;
-    }
-  
-    .experience-section .orange-text {
-      font-size: 18px;
-    }
-  
-    .inner-section .about-title {
-      font-size: 20px;
-    }
-  
-    .inner-section .about-info {
-      font-size: 12px;
-    }
-  
-    .inner-section ul li {
-      font-size: 12px;
-    }
+
+  .about {
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+    /* Adjust background size to fit smaller screens */
+    padding: 50px 20px;
+    /* Reduce padding for smaller screens */
+    background-position: top center;
   }
+
+  .experience-section {
+    width: auto;
+    position: static;
+    /* Adjust position to avoid overlap */
+    margin-bottom: 20px;
+    /* Add spacing between sections */
+  }
+
+  .experience-section h1 {
+    padding: 10px 20px;
+    /* Adjust padding for better fit */
+    font-size: 14px;
+    /* Reduce font size */
+    text-align: center;
+  }
+
+  .experience-section .orange-text {
+    font-size: 20px;
+    /* Adjust font size for mobile view */
+  }
+
+  .inner-section {
+    width: 100%;
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+    box-shadow: none;
+    /* Remove shadow for simplicity */
+  }
+
+  .inner-section h5 {
+    font-size: 12px;
+    /* Smaller font size for headings */
+    text-align: left;
+    /* Align text to the left */
+  }
+
+  .inner-section .about-title {
+    font-size: 30px;
+    /* Adjust font size for smaller screens */
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .inner-section .about-info,
+  .inner-section ul,
+  .inner-section ul li {
+    font-size: 16px;
+    /* Adjust text size for readability */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .inner-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .inner-section .contact {
+    float: none;
+    /* Reset float for mobile view */
+    margin-top: 15px;
+    text-align: left;
+    float: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    margin-top: 30px;
+  }
+
+  .about {
+    padding: 30px 15px;
+    /* Further reduce padding for smaller screens */
+  }
+
+  .experience-section h1 {
+    font-size: 12px;
+  }
+
+  .experience-section .orange-text {
+    font-size: 18px;
+  }
+
+  .inner-section .about-title {
+    font-size: 20px;
+  }
+
+  .inner-section .about-info {
+    font-size: 12px;
+  }
+
+  .inner-section ul li {
+    font-size: 12px;
+  }
+}
+
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 1200px) {
+  .cards_container {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 10px;
+    width: 100vw;
+    padding-bottom: 30px;
+  }
+
+  .card {
+    width: 270px; /* Fixed width */
+    height: 366px; /* Fixed height */
+    flex: 0 0 auto; /* Prevent cards from resizing */
+    scroll-snap-align: center;
+  }
+
+  .cards_container::-webkit-scrollbar {
+    display: none; /* For WebKit browsers */
+  }
+}
