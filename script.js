@@ -20,15 +20,15 @@ window.addEventListener('resize', () => {
 });
 
 
-document.getElementById('action_btn').addEventListener('click', function(e) {
+document.getElementById('action_btn').addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default action of the button (if any)
     document.getElementById('contact').scrollIntoView({
         behavior: 'smooth'
     });
 });
 
-document.querySelectorAll('.scroll-link').forEach(function(link) {
-    link.addEventListener('click', function(e) {
+document.querySelectorAll('.scroll-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
         e.preventDefault(); // Prevent the default anchor link behavior
         const targetId = link.getAttribute('href'); // Get the target section's id
         document.querySelector(targetId).scrollIntoView({
@@ -36,4 +36,10 @@ document.querySelectorAll('.scroll-link').forEach(function(link) {
         });
     });
 });
+
+// Get the current year and set it in the footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+
+
 

@@ -1,6 +1,7 @@
-html{
+html {
     behavior: smooth;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -15,11 +16,11 @@ body {
 
 header {
     background: #F46B3F;
-    position: fixed;      /* Fixes the header to the top */
-    top: 0;               /* Aligns it to the top of the page */
-    left: 0;              /* Ensures the header spans the entire width */
-    width: 100%;          /* Ensures the header spans the entire width */
-    z-index: 1000;        /* Ensures the header stays on top of other elements */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav {
@@ -43,6 +44,10 @@ nav .links {
     display: flex;
     gap: 62px;
 
+}
+
+.nav .phone {
+    font-weight: 500;
 }
 
 a {
@@ -136,9 +141,8 @@ section#hero {
 
 #action_btn:hover {
     transform: scale(1.05);
-    /* Slightly increase the size */
     background-color: #e65a29;
-    /* Darken background color on hover */
+
 }
 
 /* SERVICES SECTION */
@@ -150,48 +154,6 @@ section#hero {
     position: relative;
     margin-top: -50px;
 }
-
-/* .icons {
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    position: absolute;
-    bottom: 80px;
-} */
-
-/* #hero .ph--wind-thin::after {
-    display: inline-block;
-    width: 37px;
-    height: 37px;
-    vertical-align: -0.125em;
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23080808' d='M180 184a28 28 0 0 1-28 28c-12.09 0-23.76-7.83-27.75-18.61a4 4 0 1 1 7.5-2.78C134.58 198.24 143.28 204 152 204a20 20 0 0 0 0-40H40a4 4 0 0 1 0-8h112a28 28 0 0 1 28 28M148 72a28 28 0 0 0-28-28c-12.09 0-23.76 7.83-27.75 18.61a4 4 0 0 0 7.5 2.78C102.58 57.76 111.28 52 120 52a20 20 0 0 1 0 40H24a4 4 0 0 0 0 8h96a28 28 0 0 0 28-28m60 4c-12.09 0-23.76 7.83-27.75 18.61a4 4 0 1 0 7.5 2.78C190.58 89.76 199.28 84 208 84a20 20 0 0 1 0 40H32a4 4 0 0 0 0 8h176a28 28 0 0 0 0-56'/%3E%3C/svg%3E");
-} */
-
-/* #hero .material-symbols-light--plumbing::after {
-    display: inline-block;
-    width: 37px;
-    height: 37px;
-    vertical-align: -0.125em;
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23080808' d='m18.621 9.214l-2.89-2.891l-2.125 2.12l-1.414-1.408l2.499-2.504q.223-.223.492-.322q.269-.1.548-.1q.285 0 .56.1q.276.099.494.322l1.548 1.548q.373.367.547.824t.174.955q0 .344-.107.692q-.106.348-.326.664M7.25 13.39q-.315-.316-.315-.717t.315-.716l2.104-2.11l1.413 1.414L8.64 13.39q-.31.315-.692.315t-.697-.315m-1.883 6.867q-.217-.223-.319-.509q-.102-.285-.102-.59q0-.303.1-.58t.321-.498l6.825-6.82l-3.52-3.526q-.316-.31-.307-.692t.326-.697q.309-.315.703-.305q.394.009.71.325l3.502 3.501l1.425-1.425l2.28 2.292q.166.166.166.345t-.165.344q-.166.146-.373.127t-.489-.261l-8.95 8.95q-.223.223-.49.331q-.266.109-.564.109t-.577-.102t-.502-.32'/%3E%3C/svg%3E");
-}
-
-#hero .material-symbols-light--electrical-services-rounded::after {
-    display: inline-block;
-    width: 37px;
-    height: 37px;
-    vertical-align: -0.125em;
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23080808' d='M18 14.5q-.213 0-.356-.144t-.144-.357t.144-.356T18 13.5h2q.213 0 .356.144t.144.357t-.144.356T20 14.5zm0 4q-.213 0-.356-.144t-.144-.357t.144-.356T18 17.5h2q.213 0 .356.144t.144.357t-.144.356T20 18.5zm-3.5 1q-.825 0-1.412-.587T12.5 17.5h-1.192q-.343 0-.576-.232t-.232-.576v-1.384q0-.343.232-.576t.576-.232H12.5q0-.825.588-1.412T14.5 12.5h1.192q.343 0 .576.232t.232.576v5.384q0 .344-.232.576t-.576.232zm-7.5-3q-1.458 0-2.479-1.021T3.5 13t1.021-2.479T7 9.5h1.5q.817 0 1.409-.591q.591-.592.591-1.409t-.591-1.409Q9.317 5.5 8.5 5.5H5q-.213 0-.356-.144T4.5 4.999t.144-.356T5 4.5h3.5q1.258 0 2.129.871T11.5 7.5t-.871 2.129T8.5 10.5H7q-1.031 0-1.766.736q-.734.735-.734 1.768t.735 1.764T7 15.5h2q.213 0 .356.144t.144.357t-.144.356T9 16.5z'/%3E%3C/svg%3E");
-}
-
-#hero .tabler--paint::after {
-    display: inline-block;
-    width: 37px;
-    height: 37px;
-    vertical-align: -0.125em;
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23080808' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'%3E%3Cpath d='M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z'/%3E%3Cpath d='M19 6h1a2 2 0 0 1 2 2a5 5 0 0 1-5 5h-5v2m-2 1a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z'/%3E%3C/g%3E%3C/svg%3E");
-} */
 
 .card {
     background: #DDD7B6;
@@ -277,7 +239,7 @@ section .precess-title {
     transition: transform 0.6s ease;
 }
 
-.step:hover{
+.step:hover {
     transform: scale(1.05);
 }
 
@@ -451,8 +413,6 @@ footer {
     position: absolute;
     top: 50px;
     left: -20px;
-
-
 }
 
 .experience-section h1 {
@@ -475,7 +435,6 @@ footer {
     line-height: 29px;
     text-align: center;
     color: #EC6033;
-
 }
 
 .inner-section {
@@ -522,27 +481,24 @@ footer {
     color: rgba(0, 0, 0, 0.83);
     margin-left: 74px;
     margin-bottom: 29px;
-
 }
 
 .inner-section .contact {
-
     margin-top: 21px;
     float: right;
-
 }
 
 .inner-section .contact a {
     font-size: 18px;
-    background-color: #dadbca34; /* Fallback color */
+    background-color: #dadbca34;
     background-image: linear-gradient(to right, #e65a29 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     border-radius: 10px;
     padding: 5px;
-    transition: background-position 0.4s ease; /* Animate background position */
-    color: black; /* Text color */
-    text-decoration: none; /* Remove underline if any */
+    transition: background-position 0.4s ease;
+    color: black;
+    text-decoration: none;
 }
 
 .inner-section .contact a:hover {

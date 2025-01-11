@@ -22,7 +22,7 @@
           <li><a href="#portofoliu" >Portofoliu</a></li>
           <li><a href="#contact" class="scroll-link">Contact</a></li>
         </ul>
-        <li><a href="tel:+37369598170" class="phone">+37369598170</a></li>
+        <li><a href="https://wa.me/37369598170" class="phone">+37369598170</a></li>
           <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
           </div>
@@ -32,7 +32,7 @@
         <li><a href="#servicii" class="scroll-link">Servicii</a></li>
         <li><a href="#portofoliu">Portofoliu</a></li>
         <li><a href="#contact" class="scroll-link">Contact</a></li>
-        <li><a href="tel:+37369598170" class="phone">+37369598170</a></li>
+        <li><a href="https://wa.me/37369598170" class="phone">+37369598170</a></li>
       </div>
   </header>
   <main>
@@ -41,12 +41,6 @@
         <p>De la reparații rapide la soluții <br> 
           complete, suntem aici pentru tine!</p>
           <button id="action_btn">SOLICITA OFERTA</button>
-          <!-- <div class="icons">
-            <span class="ph--wind-thin"></span>
-            <span class="material-symbols-light--plumbing"></span>
-            <span class="material-symbols-light--electrical-services-rounded"></span>
-            <span class="tabler--paint"></span>
-          </div> -->
       </section>
       <section class="cards_container" id="servicii">
         <div class="card">
@@ -90,7 +84,7 @@
         </ul>
           <div class="contact">
              <span class="ic--round-phone"></span>
-            <a href="tel:+37369598170">069598170</a>
+            <a href="https://wa.me/37369598170">069598170</a>
           </div>
         </div>
       </div>
@@ -122,6 +116,12 @@
     <section id="contact">
       <h3 class="contact-title">CONTACT</h3>
       <form action="https://formsubmit.co/1df0f1e9d7c549724f3d2d609c906b1f" method="POST">
+        <!-- Honeypot -->
+         <input type="text" name="_honey" style="display: none;">
+         <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Success Page -->
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
           <div class="form-group">
               <label for="nume">Nume:</label>
               <input type="text" id="nume" name="nume" placeholder="Introduceți numele" required>
@@ -148,7 +148,7 @@
           <a href="#" class="logo">
             MANARA
           </a>
-          <p>&copy; 2025 MANARA - Toate drepturile rezervate</p>
+          <p>&copy; <span id="current-year"></span> MANARA - Toate drepturile rezervate</p>
         </div>
         <div class="footer-middle">
           <ul>

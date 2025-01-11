@@ -56,124 +56,71 @@
   }
 }
 
+/* Media Query for Smaller Screens */
+@media (max-width: 900px) {
+  .precess-title {
+    font-size: 24px;
+    /* Adjust font size for smaller screens */
+    margin-top: 20px;
+    /* Adjust margin */
+  }
 
-/* Adjustments for step components on smaller screens */
-/* @media (max-width: 992px) {
   .steps-container {
-    gap: 30px;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    /* Align to the start */
+    flex-wrap: nowrap;
+    /* Prevent wrap */
+    overflow-x: auto;
+    /* Allow horizontal scroll */
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    width: auto;
+    /* Auto width to adjust based on content */
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .step {
-    width: 90%;
-    max-width: 350px;
-  
+    width: 270px;
+    /* Fixed width for smaller screens */
+    height: 160px;
+    /* Fixed height for smaller screens */
+    flex: 0 0 auto;
+    /* Prevent resizing */
+    margin-top: 20px;
+    /* Adjust margin */
   }
 
   .step-number {
+    font-size: 18px;
+    /* Adjust step number size */
     width: 35px;
+    /* Adjust size */
     height: 35px;
-    font-size: 16px;
-    
+    /* Adjust size */
   }
 
   .step h3 {
     font-size: 18px;
-    
+    /* Adjust font size for smaller screens */
   }
 
   .step p {
     font-size: 14px;
-    
-  }
-}
-
-@media (max-width: 576px) {
-  .steps-container {
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .step {
-    width: 95%;
-    
-  }
-
-  .step-number {
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
-    
-  }
-
-  .step h3 {
-    font-size: 16px;
-    
-  }
-
-  .step p {
-    font-size: 12px;
-    
-  }
-}
-
-@media (max-width: 667px) {
-  section#hero {
-    gap: 40px;
-  }
-
-} */
-
-
-/* Media Query for Smaller Screens */
-@media (max-width: 900px) {
-  .precess-title {
-      font-size: 24px; /* Adjust font size for smaller screens */
-      margin-top: 20px; /* Adjust margin */
-  }
-
-  .steps-container {
-      justify-content: flex-start; /* Align to the start */
-      flex-wrap: nowrap; /* Prevent wrap */
-      overflow-x: auto; /* Allow horizontal scroll */
-      scroll-snap-type: x mandatory;
-      gap: 10px;
-      width: auto; /* Auto width to adjust based on content */
-      padding-bottom: 20px;
-      padding-left: 10px;
-      padding-right: 10px;
-  }
-
-  .step {
-      width: 270px; /* Fixed width for smaller screens */
-      height: 160px; /* Fixed height for smaller screens */
-      flex: 0 0 auto; /* Prevent resizing */
-      margin-top: 20px; /* Adjust margin */
-  }
-
-  .step-number {
-      font-size: 18px; /* Adjust step number size */
-      width: 35px; /* Adjust size */
-      height: 35px; /* Adjust size */
-  }
-
-  .step h3 {
-      font-size: 18px; /* Adjust font size for smaller screens */
-  }
-
-  .step p {
-      font-size: 14px; /* Adjust font size for smaller screens */
+    /* Adjust font size for smaller screens */
   }
 
   .steps-container::-webkit-scrollbar {
-      display: none; /* Hide scrollbar */
+    display: none;
+    /* Hide scrollbar */
   }
 
   .steps-container {
-      -ms-overflow-style: none; /* For Internet Explorer and Edge */
-      scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+    scrollbar-width: none;
+    /* For Firefox */
   }
 }
 
@@ -296,7 +243,6 @@
 }
 
 
-
 /* Media Query for Smaller Screens */
 @media (max-width: 1200px) {
   .cards_container {
@@ -311,13 +257,17 @@
   }
 
   .card {
-    width: 270px; /* Fixed width */
-    height: 366px; /* Fixed height */
-    flex: 0 0 auto; /* Prevent cards from resizing */
+    width: 270px;
+    /* Fixed width */
+    height: 366px;
+    /* Fixed height */
+    flex: 0 0 auto;
+    /* Prevent cards from resizing */
     scroll-snap-align: center;
   }
 
   .cards_container::-webkit-scrollbar {
-    display: none; /* For WebKit browsers */
+    display: none;
+    /* For WebKit browsers */
   }
 }
