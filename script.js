@@ -1,15 +1,23 @@
-
 const toggleBtn = document.querySelector('.toggle_btn');
 const toggleBtnIcon = document.querySelector('.toggle_btn i');
 const dropdownMenu = document.querySelector('.dropdown_menu');
 
 // Toggle dropdown on button click
-toggleBtn.onclick = function () {
+toggleBtn.onclick = function (e) {
+    e.stopPropagation();  // Prevent click event from bubbling up to the document
     dropdownMenu.classList.toggle('open');
 
     const isOpen = dropdownMenu.classList.contains('open');
     toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 };
+
+// Close dropdown if clicked outside of it
+document.addEventListener('click', function (e) {
+    if (!dropdownMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+        dropdownMenu.classList.remove('open');
+        toggleBtnIcon.classList = 'fa-solid fa-bars';  // Reset toggle icon
+    }
+});
 
 // Handle window resize to reset dropdown state
 window.addEventListener('resize', () => {
@@ -18,6 +26,7 @@ window.addEventListener('resize', () => {
         toggleBtnIcon.classList = 'fa-solid fa-bars'; // Reset toggle icon
     }
 });
+
 
 
 document.getElementById('action_btn').addEventListener('click', function (e) {
