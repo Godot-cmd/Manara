@@ -13,9 +13,13 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-/* HEADER */
 header {
     background: #F46B3F;
+    position: fixed;      /* Fixes the header to the top */
+    top: 0;               /* Aligns it to the top of the page */
+    left: 0;              /* Ensures the header spans the entire width */
+    width: 100%;          /* Ensures the header spans the entire width */
+    z-index: 1000;        /* Ensures the header stays on top of other elements */
 }
 
 .nav {
@@ -28,7 +32,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-
+    position: relative;
 }
 
 .links {
