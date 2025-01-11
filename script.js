@@ -18,3 +18,22 @@ window.addEventListener('resize', () => {
         toggleBtnIcon.classList = 'fa-solid fa-bars'; // Reset toggle icon
     }
 });
+
+
+document.getElementById('action_btn').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent the default action of the button (if any)
+    document.getElementById('contact').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.querySelectorAll('.scroll-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default anchor link behavior
+        const targetId = link.getAttribute('href'); // Get the target section's id
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth' // Smooth scroll effect
+        });
+    });
+});
+
