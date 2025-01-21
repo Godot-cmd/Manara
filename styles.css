@@ -83,7 +83,7 @@ a:hover {
     background: rgba(245, 243, 243, 0.397);
     overflow: hidden;
     transition: height 0.5s ease;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(30px);
     border-radius: 10px;
     position: absolute;
 }
