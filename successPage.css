@@ -30,7 +30,7 @@ body {
 
 .success-message h1 {
     font-size: 2.5rem;
-    color: #28a745;
+    color: #20c446;
     margin-bottom: 20px;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .btn-back-home {
-    background-color: #333;
+    background-color: ##F46B3F;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
