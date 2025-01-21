@@ -138,51 +138,39 @@
     width: 100%;
     height: auto;
     background-size: 100%;
-    /* Adjust background size to fit smaller screens */
     padding: 50px 20px;
-    /* Reduce padding for smaller screens */
     background-position: top center;
   }
 
   .experience-section {
     width: auto;
     position: static;
-    /* Adjust position to avoid overlap */
     margin-bottom: 20px;
-    /* Add spacing between sections */
   }
 
   .experience-section h1 {
     padding: 10px 20px;
-    /* Adjust padding for better fit */
     font-size: 14px;
-    /* Reduce font size */
     text-align: center;
   }
 
   .experience-section .orange-text {
     font-size: 20px;
-    /* Adjust font size for mobile view */
   }
 
   .inner-section {
     width: 100%;
     padding: 20px;
-    /* Adjust padding for smaller screens */
     box-shadow: none;
-    /* Remove shadow for simplicity */
   }
 
   .inner-section h5 {
     font-size: 12px;
-    /* Smaller font size for headings */
     text-align: left;
-    /* Align text to the left */
   }
 
   .inner-section .about-title {
     font-size: 30px;
-    /* Adjust font size for smaller screens */
     margin-left: 0;
     margin-right: 0;
     text-align: left;
@@ -193,7 +181,6 @@
   .inner-section ul,
   .inner-section ul li {
     font-size: 16px;
-    /* Adjust text size for readability */
     margin-left: 0;
     margin-right: 0;
   }
@@ -204,7 +191,6 @@
 
   .inner-section .contact {
     float: none;
-    /* Reset float for mobile view */
     margin-top: 15px;
     text-align: left;
     float: right;
@@ -218,7 +204,6 @@
 
   .about {
     padding: 30px 15px;
-    /* Further reduce padding for smaller screens */
   }
 
   .experience-section h1 {
@@ -242,7 +227,6 @@
   }
 }
 
-
 /* Media Query for Smaller Screens */
 @media (max-width: 1200px) {
   .cards_container {
@@ -258,16 +242,12 @@
 
   .card {
     width: 270px;
-    /* Fixed width */
     height: 366px;
-    /* Fixed height */
     flex: 0 0 auto;
-    /* Prevent cards from resizing */
     scroll-snap-align: center;
   }
 
   .cards_container::-webkit-scrollbar {
     display: none;
-    /* For WebKit browsers */
   }
 }

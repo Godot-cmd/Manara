@@ -22,7 +22,7 @@
           <li><a href="#portofoliu" >Portofoliu</a></li>
           <li><a href="#contact" class="scroll-link">Contact</a></li>
         </ul>
-        <li><a href="https://wa.me/37369598170" class="phone">+37369598170</a></li>
+        <li><a href="https://wa.me/37369598170" class="phone"><span class="ic--baseline-whatsapp"></span>+373 695 98 170</a></li>
           <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
           </div>
@@ -32,7 +32,7 @@
         <li><a href="#servicii" class="scroll-link">Servicii</a></li>
         <li><a href="#portofoliu">Portofoliu</a></li>
         <li><a href="#contact" class="scroll-link">Contact</a></li>
-        <li><a href="https://wa.me/37369598170" class="phone">+37369598170</a></li>
+        <li><a href="https://wa.me/37369598170" class="phone"><span class="ic--baseline-whatsapp"></span>+373 695 98 170</a></li>
       </div>
   </header>
   <main>
@@ -42,32 +42,40 @@
           complete, suntem aici pentru tine!</p>
           <button id="action_btn">SOLICITA OFERTA</button>
       </section>
+      <div id="details-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2 id="modal-title"></h2>
+          <div id="modal-description"></div>
+        </div>
+      </div>
       <section class="cards_container" id="servicii">
         <div class="card">
           <div class="card-image img-1"></div>
-            <h2>AER CONDITIONAT</h2>
-            <p>Instalăm și întreținem sisteme de aer condiționat pentru un confort optim, la cele mai bune prețuri.</p>
-            <a href="">DETALII...</a>
+          <h2>AER CONDIȚIONAT</h2>
+          <p>Instalăm și întreținem sisteme de aer condiționat pentru un confort optim, la cele mai bune prețuri.</p>
+          <a href="#" class="details-link" data-service="AER CONDITIONAT">DETALII...</a>
         </div>
         <div class="card">
           <div class="card-image img-2"></div>
-            <h2>INSTALATII SANITARE</h2>
-            <p>Oferim servicii complete de instalații sanitare, întreținere și reparații pentru confortul casei tale.</p>
-            <a href="">DETALII...</a>
+          <h2>INSTALAȚII SANITARE</h2>
+          <p>Oferim servicii complete de instalații sanitare, întreținere și reparații pentru confortul casei tale.</p>
+          <a href="#" class="details-link" data-service="INSTALATII SANITARE">DETALII...</a>
         </div>
         <div class="card">
           <div class="card-image img-3"></div>
-            <h2>SERVICII ELECTRICE</h2>
-            <p>Realizăm instalații electrice sigure și eficiente, reparații rapide și modernizări pentru un mediu mai confortabil.</p>
-            <a href="">DETALII...</a>
+          <h2>SERVICII ELECTRICE</h2>
+          <p>Realizăm instalații electrice sigure și eficiente, reparații rapide și modernizări pentru un mediu mai confortabil.</p>
+          <a href="#" class="details-link" data-service="SERVICII ELECTRICE">DETALII...</a>
         </div>
         <div class="card">
           <div class="card-image img-4"></div>
-            <h2>ZUGRAVIT</h2>
-            <p>Oferim servicii de zugrăvire de calitate, transformând spațiile tale cu finisaje durabile și estetice.</p>
-            <a href="">DETALII...</a>
+          <h2>ZUGRĂVIT</h2>
+          <p>Oferim servicii de zugrăvire de calitate, transformând spațiile tale cu finisaje durabile și estetice.</p>
+          <a href="#" class="details-link" data-service="ZUGRAVIT">DETALII...</a>
         </div>
       </section>
+      
       <section class="about-section" id="despre">
       <div class="about">
         <div class="experience-section">
@@ -121,7 +129,7 @@
          <!-- Disable Captcha -->
           <input type="hidden" name="_captcha" value="false">
           <!-- Success Page -->
-          <input type="hidden" name="_next" value="https://godot-cmd.github.io/Manara/success.html">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
           <div class="form-group">
               <label for="nume">Nume:</label>
               <input type="text" id="nume" name="nume" placeholder="Introduceți numele" required>
