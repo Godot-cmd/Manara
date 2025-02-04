@@ -20,7 +20,6 @@ window.addEventListener('resize', () => {
 });
 
 
-
 document.getElementById('action_btn').addEventListener('click', function (e) {
   e.preventDefault();
   document.getElementById('contact').scrollIntoView({
@@ -119,3 +118,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+

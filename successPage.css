@@ -10,6 +10,7 @@ body {
     height: 100vh;
 }
 
+/* Success Section */
 #success {
     display: flex;
     justify-content: center;
@@ -18,8 +19,9 @@ body {
     height: 100%;
 }
 
+/* Success Message Box */
 .success-message {
-    background-color: white;
+    background-color: #a5b3b2;
     padding: 40px;
     text-align: center;
     border-radius: 8px;
@@ -28,27 +30,44 @@ body {
     width: 100%;
 }
 
+/* Logo Styling */
+.success-logo-img {
+    width: 7em;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.success-logo-img:hover {
+    transform: scale(1.1);
+}
+
+/* Heading */
 .success-message h1 {
     font-size: 2.5rem;
-    color: #20c446;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
+/* Paragraph */
 .success-message p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
+/* Back Button */
 .btn-back-home {
-    background-color: #F46B3F;
+    background-color: #ff6b43;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
     display: inline-block;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .btn-back-home:hover {
-    background-color: #555;
+    background-color: #d35434; /* A slightly darker shade of orange for better contrast */
+    transform: scale(1.05); /* Slightly enlarges the button for a smooth effect */
 }
