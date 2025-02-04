@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <title>Manara - Servicii de Instalații</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poller+One&display=swap" rel="stylesheet">
@@ -12,169 +12,107 @@
 </head>
 <body>
   <header class="header">
-      <nav class="nav">
-        <a href="index.html" class="logo-link">
-          <img src="images/MAINLOGO@2x-8.png" alt="MANARA Logo" class="logo-img">
-        </a>
-        <ul class="links">
+    <nav class="nav">
+      <a href="index.html" class="logo-link"><img src="images/MAINLOGO@2x-8.png" alt="MANARA Logo" class="logo-img"></a>
+      <ul class="links">
+        <li><a href="#despre" class="scroll-link">Despre noi</a></li>
+        <li><a href="#servicii" class="scroll-link">Servicii</a></li>
+        <li><a href="https://www.instagram.com/manarasrl">Portofoliu</a></li>
+        <li><a href="#contact" class="scroll-link">Contact</a></li>
+      </ul>
+      <li><a href="https://wa.me/40757154349" class="phone"><span class="ic--baseline-whatsapp"></span>+40 757 154 349</a></li>
+      <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+    <div class="dropdown_menu">
+      <li><a href="#despre" class="scroll-link">Despre noi</a></li>
+      <li><a href="#servicii" class="scroll-link">Servicii</a></li>
+      <li><a href="#portofoliu">Portofoliu</a></li>
+      <li><a href="#contact" class="scroll-link">Contact</a></li>
+      <li><a href="https://wa.me/40757154349" class="phone"><span class="ic--baseline-whatsapp"></span>+40 757 154 349</a></li>
+    </div>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Servicii de Instalații de Încredere în București</h1>
+      <p>De la reparații rapide la soluții <br> complete, suntem aici pentru tine!</p>
+      <button id="action_btn">SOLICITĂ OFERTA</button>
+    </section>
+    <div id="details-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 id="modal-title"></h2>
+        <div id="modal-description"></div>
+      </div>
+    </div>
+    <section class="cards_container" id="servicii">
+      <div class="card">
+        <div class="card-image img-1"></div>
+        <h2>AER CONDIȚIONAT</h2>
+        <p>Instalăm și întreținem sisteme de aer condiționat pentru un confort optim, la cele mai bune prețuri.</p>
+        <a href="#" class="details-link" data-service="AER CONDITIONAT">DETALII...</a>
+      </div>
+      <div class="card">
+        <div class="card-image img-2"></div>
+        <h2>INSTALAȚII SANITARE</h2>
+        <p>Oferim servicii complete de instalații sanitare, întreținere și reparații pentru confortul casei tale.</p>
+        <a href="#" class="details-link" data-service="INSTALATII SANITARE">DETALII...</a>
+      </div>
+      <div class="card">
+        <div class="card-image img-3"></div>
+        <h2>SERVICII ELECTRICE</h2>
+        <p>Realizăm instalații electrice sigure și eficiente, reparații rapide și modernizări pentru un mediu mai confortabil.</p>
+        <a href="#" class="details-link" data-service="SERVICII ELECTRICE">DETALII...</a>
+      </div>
+      <div class="card">
+        <div class="card-image img-4"></div>
+        <h2>ZUGRĂVIT</h2>
+        <p>Oferim servicii de zugrăvire de calitate, transformând spațiile tale cu finisaje durabile și estetice.</p>
+        <a href="#" class="details-link" data-service="ZUGRAVIT">DETALII...</a>
+      </div>
+    </section>
+    <section id="contact">
+      <h3 class="contact-title">CONTACT</h3>
+      <form action="https://formsubmit.co/f3cfbeb1f851ff0b14468e44644d67db" method="POST">
+        <input type="text" name="_honey" style="display: none;">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://godot-cmd.github.io/Manara/success.html">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-group">
+          <label for="nume">Nume:</label>
+          <input type="text" id="nume" name="nume" placeholder="Introduceți numele" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Introduceți email-ul" required>
+        </div>
+        <div class="form-group">
+          <label for="telefon">Telefon:</label>
+          <input type="tel" id="telefon" name="telefon" placeholder="Introduceți telefonul" required>
+        </div>
+        <div class="form-group">
+          <label for="mesaj">Mesaj:</label>
+          <textarea id="mesaj" name="mesaj" rows="3" placeholder="Scrieți mesajul aici" required></textarea>
+        </div>
+        <button type="submit">Trimite</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="#" class="logo"><img src="images/MAINLOGO@2x-8.png" alt="MANARA Logo" class="footer-logo-img"></a>
+        <p>&copy; <span id="current-year"></span> MANARA - Toate drepturile rezervate</p>
+      </div>
+      <div class="footer-middle">
+        <ul>
           <li><a href="#despre" class="scroll-link">Despre noi</a></li>
           <li><a href="#servicii" class="scroll-link">Servicii</a></li>
           <li><a href="https://www.instagram.com/manarasrl">Portofoliu</a></li>
           <li><a href="#contact" class="scroll-link">Contact</a></li>
         </ul>
-        <li><a href="https://wa.me/40757154349" class="phone"><span class="ic--baseline-whatsapp"></span>+40 757 154 349</a></li>
-          <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-      </nav>
-      <div class="dropdown_menu">
-        <li><a href="#despre" class="scroll-link">Despre noi</a></li>
-        <li><a href="#servicii" class="scroll-link">Servicii</a></li>
-        <li><a href="#portofoliu">Portofoliu</a></li>
-        <li><a href="#contact" class="scroll-link">Contact</a></li>
-        <li><a href="https://wa.me/40757154349" class="phone"><span class="ic--baseline-whatsapp"></span>+40 757 154 349</a></li>
       </div>
-  </header>
-  <main>
-      <section id="hero">
-        <h1>Servicii de Instalații de Încredere în București</h1>
-        <p>De la reparații rapide la soluții <br> 
-          complete, suntem aici pentru tine!</p>
-          <button id="action_btn">SOLICITĂ OFERTA</button>
-      </section>
-      <div id="details-modal" class="modal">
-        <div class="modal-content">
-          <span class="close-button">&times;</span>
-          <h2 id="modal-title"></h2>
-          <div id="modal-description"></div>
-        </div>
-      </div>
-      <section class="cards_container" id="servicii">
-        <div class="card">
-          <div class="card-image img-1"></div>
-          <h2>AER CONDIȚIONAT</h2>
-          <p>Instalăm și întreținem sisteme de aer condiționat pentru un confort optim, la cele mai bune prețuri.</p>
-          <a href="#" class="details-link" data-service="AER CONDITIONAT">DETALII...</a>
-        </div>
-        <div class="card">
-          <div class="card-image img-2"></div>
-          <h2>INSTALAȚII SANITARE</h2>
-          <p>Oferim servicii complete de instalații sanitare, întreținere și reparații pentru confortul casei tale.</p>
-          <a href="#" class="details-link" data-service="INSTALATII SANITARE">DETALII...</a>
-        </div>
-        <div class="card">
-          <div class="card-image img-3"></div>
-          <h2>SERVICII ELECTRICE</h2>
-          <p>Realizăm instalații electrice sigure și eficiente, reparații rapide și modernizări pentru un mediu mai confortabil.</p>
-          <a href="#" class="details-link" data-service="SERVICII ELECTRICE">DETALII...</a>
-        </div>
-        <div class="card">
-          <div class="card-image img-4"></div>
-          <h2>ZUGRĂVIT</h2>
-          <p>Oferim servicii de zugrăvire de calitate, transformând spațiile tale cu finisaje durabile și estetice.</p>
-          <a href="#" class="details-link" data-service="ZUGRAVIT">DETALII...</a>
-        </div>
-      </section>
-      <section class="about-section" id="despre">
-      <div class="about">
-        <div class="experience-section">
-          <h1><span class="orange-text">7 ANI</span><br>DE EXPERIENTA</h1>
-        </div>
-        <div class="inner-section">
-          <h5>CINE SUNTEM?</h5>
-          <p class="about-title">Servicii de <span class="highlight">instalații profesionale</span> pentru casa ta.</p>
-          <p class="about-info">Suntem dedicați să oferim cele mai bune soluții pentru instalații electrice, sanitare, aer condiționat și zugrăvit.</p>
-          <ul>
-            <li><span class="material-symbols--done-rounded"></span> Specialiști calificați.</li>
-            <li><span class="material-symbols--done-rounded"></span> Instalare rapidă și ușoară.</li>
-            <li><span class="material-symbols--done-rounded"></span> Consultanță gratuită și soluții personalizate.</li>
-        </ul>
-          <div class="contact">
-             <span class="ic--round-phone"></span>
-            <a href="https://wa.me/40757154349">+40 757 154 349</a>
-          </div>
-        </div>
-      </div>
-    </section>
-      <section class="steps">
-        <h3 class="precess-title">PROCESUL DE LUCRU</h3>
-        <div class="steps-container">
-            <div class="step">
-              <div class="content">
-                <div class="step-number">1</div>
-                <h3>CONTACTARE</h3>
-                <p>Completează formularul sau sună-ne pentru a solicita o ofertă.</p>
-              </div>
-            </div>
-            <div class="progress-bar"></div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3>EVALUARE</h3>
-                <p>Echipa noastră va analiza cerințele și va oferi o estimare detaliată.</p>
-            </div>
-            <div class="progress-bar"></div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3>INSTALARE/REPARARE</h3>
-                <p>Executăm instalarea sau reparația la standarde profesionale.</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-      <h3 class="contact-title">CONTACT</h3>
-      <form action="https://formsubmit.co/f3cfbeb1f851ff0b14468e44644d67db" method="POST">
-        <!-- Honeypot -->
-         <input type="text" name="_honey" style="display: none;">
-         <!-- Disable Captcha -->
-          <input type="hidden" name="_captcha" value="false">
-          <!-- Success Page -->
-          <input type="hidden" name="_next" value="https://godot-cmd.github.io/Manara/success.html">
-          <!-- Table Template -->
-          <input type="hidden" name="_template" value="table">
-          <div class="form-group">
-              <label for="nume">Nume:</label>
-              <input type="text" id="nume" name="nume" placeholder="Introduceți numele" required>
-          </div>
-          <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Introduceți email-ul" required>
-          </div>
-          <div class="form-group">
-              <label for="telefon">Telefon:</label>
-              <input type="tel" id="telefon" name="telefon" placeholder="Introduceți telefonul" required>
-          </div>
-          <div class="form-group">
-              <label for="mesaj">Mesaj:</label>
-              <textarea id="mesaj" name="mesaj" rows="3" placeholder="Scrieți mesajul aici" required></textarea>
-          </div>
-          <button type="submit">Trimite</button>
-      </form>
-  </section>
-     </main>
-     <footer>
-      <div class="footer-container">
-        <div class="footer-left">
-          <a href="#" class="logo">
-            <img src="images/MAINLOGO@2x-8.png" alt="MANARA Logo" class="footer-logo-img">
-          </a>
-          <p>&copy; <span id="current-year"></span> MANARA - Toate drepturile rezervate</p>
-        </div>
-        <div class="footer-middle">
-          <ul>
-            <li><a href="#despre" class="scroll-link">Despre noi</a></li>
-            <li><a href="#servicii" class="scroll-link">Servicii</a></li>
-            <li><a href="https://www.instagram.com/manarasrl">Portofoliu</a></li>
-            <li><a href="#contact" class="scroll-link">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <ul class="social-media">
-            <li><a href="https://www.instagram.com/manarasrl" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://wa.me/37369598170" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
   <script src="script.js"></script>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
